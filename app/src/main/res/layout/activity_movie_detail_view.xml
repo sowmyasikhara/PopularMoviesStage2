@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    >
+
+    <android.widget.RelativeLayout
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageViewId"
+            android:layout_width="185dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/label_movie_title_id"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_title" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/titleNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_movie_title_id"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFAB44A4"
+            android:textSize="16sp" />
+
+
+        <TextView
+
+            android:id="@+id/label_release_date_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voteAverageId"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/imageViewId"
+            android:text="@string/release_date"
+            android:textSize="16sp"
+
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/label_vote_average_id"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/imageViewId"
+            android:paddingTop="16dp"
+            android:text="@string/vote_avg"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/releaseDateId"
+            android:layout_width="104dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="242dp"
+            android:layout_toRightOf="@id/imageViewId"
+            android:textSize="16sp" />
+
+        <android.widget.TextView
+            android:id="@+id/voteAverageId"
+            android:gravity="center"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_vote_average_id"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/imageViewId"
+            android:padding="8dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label_overview_id"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/trailer_recycleView"
+            android:layout_marginLeft="8dp"
+            android:text="@string/plot_synopsis"
+
+            />
+
+        <TextView
+            android:id="@+id/plotSynopsisId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_overview_id"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/author"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plotSynopsisId"
+            android:label="author"
+            android:text="Movie Reviews,Author" />
+
+        <TextView
+
+            android:id="@+id/author_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author"
+
+            />
+
+
+        <TextView
+            android:id="@+id/content"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author_id"
+            android:label="content"
+            android:text="Content" />
+
+        <TextView
+            android:id="@+id/content_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+
+            />
+
+        <android.widget.TextView
+            android:id="@+id/movieTrailerId"
+            android:layout_width="273dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/imageViewId"
+            android:layout_marginTop="-13dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/movieTrailers"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailer_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewId"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="0dp"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    </android.widget.RelativeLayout>
+
+
+
+
+
+</ScrollView>
